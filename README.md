@@ -59,7 +59,7 @@ WhatsApp Expense Bot is designed to help manage user points, provide financial a
 When a user requests to deposit points or redeem a reward, the admin will receive a private message with a prompt to approve or deny the request. Based on the admin's decision, the points will be adjusted accordingly.
 
 ## Disclaimer
-This project is not final and is currently under development. NOT WORKING YET!!!.
+This project is not final and is currently under development. NOT FULLY WORKING YET!!!.
 
 ## License
 This project is licensed under the GPL-3.0 License.
