@@ -21,7 +21,7 @@ WhatsApp Expense Bot is designed to help manage user points, provide financial a
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/whatsapp-expense-bot.git
+    git clone https://github.com/Exiiro/whatsapp-expense-bot.git
     cd whatsapp-expense-bot/expense-bot
     ```
 
