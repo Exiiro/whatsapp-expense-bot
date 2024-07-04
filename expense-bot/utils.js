@@ -29,6 +29,14 @@ const savePendingRequests = (data) => saveFile(PENDING_REQUESTS_FILE, data);
 const loadPendingSpendingRequests = () => loadFile(PENDING_SPENDING_REQUESTS_FILE);
 const savePendingSpendingRequests = (data) => saveFile(PENDING_SPENDING_REQUESTS_FILE, data);
 
+const sendLongMessage = async (sock, from, text) => {
+    const chunks = splitMessage(text);
+    console.log('Sending message in chunks:', chunks);
+    for (const chunk of chunks) {
+        await sock.sendMessage(from, { text: chunk });
+    }
+};
+
 module.exports = {
     sleep,
     splitMessage,
@@ -38,4 +46,5 @@ module.exports = {
     savePendingRequests,
     loadPendingSpendingRequests,
     savePendingSpendingRequests,
+    sendLongMessage
 };
