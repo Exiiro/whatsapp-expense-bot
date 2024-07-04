@@ -1,72 +1,41 @@
-# whatsapp-expense-bot
-This project is a WhatsApp bot designed to help manage group expenses and provide daily financial advice. The bot is built using the Baileys library for WhatsApp Web API and the OpenAI API for generating financial advice.
+# WhatsApp Bot Project
 
-
-## License
-  
-  **This project is licensed under the GPL-3.0 License.**
-
-
+## Description
+This is a WhatsApp bot designed to manage user points, provide daily financial advice, and handle reminders and rewards. The bot interacts with OpenAI to generate daily advice and allows for admin-controlled point deposits and rewards.
 
 ## Features
-
-- **Deposit Points:** Members can deposit money and earn points
-- **Check Points:** Members can check their points balance
-- **Send Reminders:** Admin can send reminders to the group
-- **Daily Financial Advice:** The bot sends daily financial advice to the group
-- **Redeem Points:** Members can redeem their points for rewards, subject to admin approval
-- **Admin Commands:** Admin can approve or reject deposit and redemption requests, and add or subtract points for any user
-
+- **Daily Financial Advice**: Get daily financial advice through OpenAI.
+- **Monthly Reminders**: Sends monthly reminders to the group.
+- **Point System**: Users can deposit points, view their points, and redeem rewards.
+- **Admin Controls**: Admin can approve deposits, manage points, and send reminders and advice to the group.
 
 ## Commands
+- `!إيداع [amount]`: Request to deposit points.
+- `!نقاطي`: Check your points.
+- `!تذكير`: Get the reminder message.
+- `!نصيحة`: Get the daily advice message.
+- `!أرسل_التذكير`: Admin command to send the reminder to the group.
+- `!أرسل_النصيحة`: Admin command to send the advice to the group.
+- `!مكافأة [reward]`: Request a reward.
 
-### Member Commands
+## Admin Commands
+- `!إضافة_نقاط [user] [points]`: Add points to a user.
+- `!طرح_نقاط [user] [points]`: Subtract points from a user.
+- Approval: Admin can approve or reject requests by responding with "نعم" or "لا".
 
-- `!إيداع`: Deposit money and earn points
-- `!نقاطي`: Check your points balance
-- `!نصيحة`: Get the daily financial advice
-- `!مكافأة`: Request a reward
-
-### Admin Commands
-
-- `!تذكير`: Send the reminder message to the group
-- `!أرسل_التذكير`: Send the reminder message to the group
-- `!أرسل_النصيحة`: Send the financial advice message to the group
-- `!إضافة_نقاط` : Add points to a user
-- `!طرح_نقاط `: Subtract points from a user
 ## Requirements
-
 - Node.js
-- npm
-- Baileys
-- OpenAI API Key
+- WhatsApp account
+- OpenAI API key
 
 ## Installation
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Set up your `.env` file with your OpenAI API key, admin ID, and group ID.
+4. Run the bot: `node index.js`.
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Exiiro/whatsapp-expense-bot.git
-   cd whatsapp-expense-bot
-   ```
+## Disclaimer
+This project is not final and is currently under development. Use it at your own risk.
 
-2. Install dependencies:
-
-   ```sh
-    npm install
-   ```
-
-3. Create a .env file in the root directory and add your OpenAI API key
-
-      
-   ```sh
-    OPENAI_API_KEY=your-openai-api-key
-   ```
-
-4. Run the bot
-   
-   ```sh
-    node index.js
-   ```
-
-
-   
+## License
+This project is licensed under the GPL-3.0 License.
