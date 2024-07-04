@@ -45,7 +45,7 @@ This project is a WhatsApp bot designed to help manage group expenses and provid
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/whatsapp-expense-bot.git
+   git clone https://github.com/Exiiro/whatsapp-expense-bot.git
    cd whatsapp-expense-bot
    ```
 
